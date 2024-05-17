@@ -29,7 +29,7 @@ r22 = r21*rho2; % Inq. 30
 r23 = max(abs(g1)*bu(1),g1^2*bu(1)+abs(g1)*rho1); % Inq. 31
 r2 = r22 + r23; p2 = r2 + r2^2/4; % Inq. 32
 k21 = bu(2)^2/2/lam2; k22 = lam1/2;  k2 = p2 + k21  + k22; % Inq. 14
-k2 = round(k2) + 0.1; % Ensure the strict inequality holds
+k2 = round(k2,1) + 0.1; % Ensure the strict inequality holds
 g2 = UGm(2)*k2;  % Inq. 12
 
 
